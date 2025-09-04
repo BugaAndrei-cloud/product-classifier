@@ -22,35 +22,26 @@ Beneficii:
 
 ## 📂 Structura proiectului
 
-project-root/
-├─ data/
-│ └─ products.csv # Setul de date brut (30k+ rânduri)
-│
-├─ notebooks/
-│ ├─ 01_exploration_and_cleaning.ipynb # Explorare și curățare date
-│ └─ 02_modeling_and_evaluation.ipynb # Modelare și evaluare
-│
-├─ src/
-│ ├─ text_cleaning.py # Funcții de curățare text
-│ └─ utils.py # Funcții generale, helperi
-│
-├─ scripts/
-│ ├─ train_model.py # Script antrenare și salvare model
-│ ├─ predict_category.py # Script CLI pentru predicții
-│ └─ evaluate_model.py # Script pentru evaluare suplimentară
-│
-├─ models/
-│ └─ model.pkl # Modelul final salvat
-│
-├─ reports/
-│ ├─ metrics.txt # Metrici evaluare model
-│ └─ confusion_matrix.png # Matrice de confuzie
-│
-├─ requirements.txt
-└─ README.md
-
-yaml
-Copiază codul
+product-classifier/
+├── data/
+│   └── products.csv
+├── notebooks/
+│   ├── 01_exploration_and_cleaning.ipynb
+│   └── 02_modeling_and_evaluation.ipynb
+├── src/
+│   ├── text_cleaning.py
+│   └── utils.py
+├── scripts/
+│   ├── train_model.py
+│   ├── predict_category.py
+│   └── evaluate_model.py
+├── models/
+│   └── model.pkl
+├── reports/
+│   ├── metrics.txt
+│   └── confusion_matrix.png
+├── requirements.txt
+└── README.md
 
 ---
 
@@ -58,8 +49,8 @@ Copiază codul
 
 1. Clonează proiectul:
 ```bash
-git clone https://github.com/username/product-category-classifier.git
-cd product-category-classifier
+git clone https://github.com/BugaAndrei-cloud/product-classifier
+cd product-classifier
 Creează și activează un mediu virtual:
 
 bash
@@ -85,8 +76,7 @@ python src/predict_category.py
 Introdu titlul produsului, iar scriptul va returna categoria estimată.
 
 📊 Rezultate
-Acuratețea modelului: ~XX% (în funcție de date)
-
+Acuratețea modelului: ~98% 
 Matricea de confuzie și metricile detaliate sunt salvate în reports/.
 
 🛠️ Tehnologii folosite
