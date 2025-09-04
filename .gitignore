@@ -1,0 +1,30 @@
+# Mediul virtual
+venv/
+
+# Bytecode Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Folder modele salvate (nu urcăm modelele mari)
+models/
+# Dacă vrei să urci doar modelul final:
+# !models/final_model.pkl
+
+# Rapoarte și grafice generate automat
+reports/
+
+# Fisiere temporare sistem
+.DS_Store
+Thumbs.db
+
+# Loguri
+*.log
+
+# Alte fișiere locale de baze de date
+*.sqlite
+*.db
